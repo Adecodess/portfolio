@@ -370,7 +370,7 @@ section .title::after {
   top: 0;
   background: crimson;
 }
-.more{
+.more {
   display: none;
 }
 
@@ -632,7 +632,7 @@ ul li a:hover span {
 
 /* spinner styling */
 
-.loader{
+.loader {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -641,9 +641,8 @@ ul li a:hover span {
   background: #fff;
   position: fixed;
   transition: all 0.5s;
-
 }
-.loader .ring{
+.loader .ring {
   position: relative;
   height: 45px;
   width: 45px;
@@ -653,7 +652,7 @@ ul li a:hover span {
   align-items: center;
   justify-content: center;
 }
-.loader .ring:after{
+.loader .ring:after {
   position: absolute;
   content: "";
   height: 100%;
@@ -664,12 +663,10 @@ ul li a:hover span {
   animation: rotate 1.5s linear infinite;
 }
 @keyframes rotate {
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }
-
-
 
 /* responsive media query start */
 @media (max-width: 1300px) {

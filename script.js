@@ -1,18 +1,17 @@
 // scroll menu
-// window.addEventListener("scroll", () => {
-//   let navbar = document.querySelector(".navbar");
-//   navbar.classList.toggle("sticky", window.scrollY > 20);
-
-// });
+window.addEventListener("scroll", () => {
+  let navbar = document.querySelector(".navbar");
+  navbar.classList.toggle("sticky", window.scrollY > 20);
+});
 
 // toggle menu bar
-//  const menuBtn = document.querySelector(".menu-btn i");
-//  const menu = document.querySelector(".menu");
+const menuBtn = document.querySelector(".menu-btn i");
+const menu = document.querySelector(".menu");
 
-// menuBtn.addEventListener("click", function () {
-//   menu.classList.toggle("active");
-//   menuBtn.classList.toggle("active");
-// })
+menuBtn.addEventListener("click", function () {
+  menu.classList.toggle("active");
+  menuBtn.classList.toggle("active");
+});
 
 // contact form submit
 
@@ -25,12 +24,12 @@ const submitForm = (e) => {
   let name = document.querySelector(".name").value;
   let email = document.querySelector(".email").value;
   let subject = document.querySelector(".subject").value;
-  let textinput = document.querySelector(".textinput").value
-  
-  sendEmail(name, email, subject, textinput)
-  
+  let textinput = document.querySelector(".textinput").value;
+
+  sendEmail(name, email, subject, textinput);
+
   // console.log(name,email,subject,textinput);
-}
+};
 
 const sendEmail = (name, email, subject, textinput) => {
   Email.send({
@@ -41,25 +40,12 @@ const sendEmail = (name, email, subject, textinput) => {
     From: "ademosuu@mail.com",
     Subject: `${name} sent you a message`,
     Body: `Name 🤵: ${name} <br/> Email 📧: ${email} <br/> Subject 📨: ${subject} <br/> Textarea: ${textinput}`,
-  }).then((message) => alert("email sent succesfully"))
+  }).then((message) => alert("email sent succesfully"));
 };
-
- 
-
-
-
- 
-
-
-
-
-
 
 // listen for submit
 const contactform = document.querySelector(".contact-form");
 contactform.addEventListener("submit", submitForm);
-
-
 
 // spinner
 const loader = document.querySelector(".loader");
