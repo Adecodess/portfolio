@@ -694,7 +694,7 @@ ul li a:hover span {
   }
 
   .menu-btn i.active:before {
-    content: "\f00d";
+    content: "\f00d ";
   }
   .navbar .menu {
     position: fixed;
