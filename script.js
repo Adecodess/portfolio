@@ -12,29 +12,29 @@ $(document).ready(function () {
     }
   });
   // slide-p script
-  // $(".scroll-up-btn").click(function () {
-  //   $("html").animate({ scrollTop: 0 });
-  // });
+  $(".scroll-up-btn").click(function () {
+    $("html").animate({ scrollTop: 0 });
+  });
 
   // toggle menu/navbar script
-  // $(".menu-btn").click(function () {
-  //   $(".navbar .menu").toggleClass("active");
-  //   $(".menu-btn i").toggleClass("active");
-  // });
-  // scroll menu
-  window.addEventListener("scroll", () => {
-    let navbar = document.querySelector(".navbar");
-    navbar.classList.toggle("sticky", window.scrollY > 20);
+  $(".menu-btn").click(function () {
+    $(".navbar .menu").toggleClass("active");
+    $(".menu-btn i").toggleClass("active");
   });
+  // scroll menu
+  // window.addEventListener("scroll", () => {
+  //   let navbar = document.querySelector(".navbar");
+  //   navbar.classList.toggle("sticky", window.scrollY > 20);
+  // });
 
   // toggle menu bar
-  const menuBtn = document.querySelector(".menu-btn i");
-  const menu = document.querySelector(".menu");
+  // const menuBtn = document.querySelector(".menu-btn i");
+  // const menu = document.querySelector(".menu");
 
-  menuBtn.addEventListener("click", function () {
-    menu.classList.toggle("active");
-    menuBtn.classList.toggle("active");
-  });
+  // menuBtn.addEventListener("click", function () {
+  //   menu.classList.toggle("active");
+  //   menuBtn.classList.toggle("active");
+  // });
 
   // contact form submit
 
